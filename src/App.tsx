@@ -21,12 +21,12 @@ function App() {
 
   return (
     <>
-      <main className="bg-slate-800 dark   h-screen container mx-auto ">
+      <main className="dark h-screen container mx-auto my-5">
         <Cart />
         <h1 className="text-2xl font-bold text-white">Products:</h1>
 
         {/* Products Container */}
-        <div className="space-y-2">
+        <div className="space-y-2 px-10">
           {PRODUCTS.map((product) => (
             <Card key={product.id}>
               <CardHeader>{product.name}</CardHeader>
